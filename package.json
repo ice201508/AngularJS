@@ -3,6 +3,8 @@
   "private": true,
   "devDependencies": {
     "autoprefixer-core": "^5.2.1",
+    "debug": "^2.2.0",
+    "engine.io": "^1.6.8",
     "grunt": "^0.4.5",
     "grunt-angular-templates": "^0.5.7",
     "grunt-concurrent": "^1.0.0",
@@ -19,6 +21,7 @@
     "grunt-filerev": "^2.1.2",
     "grunt-google-cdn": "^0.4.3",
     "grunt-jscs": "^1.8.0",
+    "grunt-karma": "^0.12.1",
     "grunt-newer": "^1.1.0",
     "grunt-ng-annotate": "^0.9.2",
     "grunt-postcss": "^0.5.5",
@@ -26,8 +29,10 @@
     "grunt-usemin": "^3.0.0",
     "grunt-wiredep": "^2.0.0",
     "jit-grunt": "^0.9.1",
-    "time-grunt": "^1.0.0",
-    "jshint-stylish": "^1.0.0"
+    "jshint-stylish": "^1.0.0",
+    "socket.io-client": "^1.4.5",
+    "socket.io-parser": "^2.2.6",
+    "time-grunt": "^1.0.0"
   },
   "engines": {
     "node": ">=0.10.0"

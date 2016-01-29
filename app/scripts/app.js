@@ -4,11 +4,16 @@
  * @ngdoc overview
  * @name jiuling
  * @description
- * # web1App
+ * # myApp
  *
  * Main module of the application.
  */
 angular
-  .module('web1App', [
-    'ngCookies'
-  ]);
+  .module('myApp', [
+    'ngCookies',
+    'ui.sortable',
+    'LocalStorageModule'
+  ])
+  .config(['localStorageServiceProvider',function(localStorageServiceProvider){
+		localStorageServiceProvider.setPrefix('ls');
+	}]);

@@ -1,23 +1,24 @@
-<div class="jumbotron">
-  <h1>Living Relode</h1>
-  <p class="lead">
-    <img src="images/yeoman.png" alt="I'm Yeoman"><br>
-    Always a pleasure scaffolding your apps.
-  </p>
-  <p><a class="btn btn-lg btn-success" ng-href="#/">Splendid!<span class="glyphicon glyphicon-ok"></span></a></p>
-</div>
+<div class="container">
+  <h2>My App</h2>
 
-<div class="row marketing">
-  <h4>HTML5 Boilerplate</h4>
-  <p>
-    HTML5 Boilerplate is a professional front-end template for building fast, robust, and adaptable web apps or sites.
-  </p>
+	<form>
+		<div class="row">
+			<div class="input-group">
+				<input type="text" ng-model="$parent.todo" class="form-control" placeholder="what needs to be done!">
+				<span class="input-group-btn">
+					<button class="btn btn-primary" ng-click="addTodo()">ADD</button>
+				</span>
+			</div>
+		</div>
+	</form>
+	<p></p>
 
-  <h4>Angular</h4>
-  <p>
-    AngularJS is a toolset for building the framework most suited to your application development.
-  </p>
-
-  <h4>Karma</h4>
-  <p>Spectacular Test Runner for JavaScript.</p>
+  <div ui-sortable ng-model="todos">
+  	<p ng-repeat="todo in todos" class="input-group" style="padding:5px 10px; cursor:move;">
+	    <input type="text" ng-model="todo" class="form-control">
+	    <span class="input-group-btn">
+	    	<button type="button" class="btn btn-danger" ng-click="removeTodo($index)">X</button>
+	    </span>
+  	</p>
+  </div>
 </div>
