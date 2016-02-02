@@ -1,3 +1,4 @@
+[TOC]
 
 [常用的生成器](https://github.com/yeoman/generator-angular)
 
