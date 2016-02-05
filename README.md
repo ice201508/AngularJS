@@ -2,6 +2,16 @@
 
 [常用的生成器](https://github.com/yeoman/generator-angular)
 
+## 启动
+
+```
+git clone ..
+npm install
+bower install
+grunt serve
+//有时会提示  Cannot find module './lang/clone' 的错误,应该是某些模块被墙了,购买VPN,或者手动安装
+```
+
 这是一个用yo自动生成的angularjs项目
 
 + node版本必须用 v0.12.0 用其他的旧版本或者最新的v5.0.0都不行
